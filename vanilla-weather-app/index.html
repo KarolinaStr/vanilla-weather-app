@@ -24,43 +24,60 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
-              <li>Friday 05:00</li>
+              <li>Last updated: <span id="date"></span></li>
               <li id="description"></li>
             </ul>
           </div>
           <div class="row">
             <div class="col-6">
               <div class="clearfix weather-temperature"></div>
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                alt="Clear"
-                class="float-left"
-              />
+              <img src="" alt="Clear" id="icon" class="float-left" />
               <div class="float-left">
-                <strong id="temperature"></strong
+                <strong id="temperature" style="font-size: 40px"></strong
                 ><span class="units">°C | <a href="#">°F</a></span>
               </div>
             </div>
           </div>
           <div class="col-6">
             <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 73%</li>
-              <li>Wind: 2 km/h</li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> Km/H</li>
             </ul>
           </div>
         </div>
       </div>
       <small>
-        <a
-          href="https://github.com/KarolinaStr/vanilla-weather-app/commit/4d9a696fc69bf70923ad75c9b497490d14994e23"
-          target="_blank"
-          >Open-source code</a
-        >
-        by Karolina Strupiechowska
+        <div style="text-align: center">
+          <a
+            href="https://github.com/KarolinaStr/vanilla-weather-app"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Karolina Strupiechowska
+        </div>
       </small>
     </div>
     <script src="src/app.js"></script>
