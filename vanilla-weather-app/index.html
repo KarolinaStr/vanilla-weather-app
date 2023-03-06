@@ -2,6 +2,12 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -32,7 +38,8 @@
                   placeholder="Type a city.."
                   class="form-control"
                   id="city-input"
-                  autocomplete="off"
+                  autocomplete="on"
+                  style="color: #0060c6"
                 />
               </div>
               <div class="col-3">
@@ -57,28 +64,48 @@
               <img src="" alt="Clear" id="icon" class="float-left" />
               <div class="float-left">
                 <strong id="temperature" style="font-size: 40px"></strong
-                ><span class="units">°C | <a href="#">°F</a></span>
+                ><span class="units" id="celcius-link"
+                  >°C | <a href="#" id="fahrenheit-link">°F</a></span
+                >
               </div>
             </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> Km/H</li>
+              </ul>
+            </div>
+            <div class="weather-forecast-date">Thu</div>
+                <img
+                  src="http://openweathermap.org/img/wn/50d@2x.png"
+                  alt=""
+                  width="42"
+                />
+                <div class="weather-forecast">
+                  <span class="weather-forecast-temperature-max"> 18° </span>
+                  <span class="weather-forecast-temperature-min"> 12° </span>
+                </div>
           </div>
-          <div class="col-6">
-            <ul>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span> Km/H</li>
-            </ul>
+          <img
+            src="http://openweathermap.org/img/wn/50d@2x.png"
+            alt=""
+            width="65"
+            </div>
+          </div>
           </div>
         </div>
-      </div>
-      <small>
-        <div style="text-align: center">
+        <div class="weather-forecast"></div>
+        <div class="row"></div>
+        <div class="col-2"></div>
+        <small style="font-size: 16px">
           <a
             href="https://github.com/KarolinaStr/vanilla-weather-app"
             target="_blank"
             >Open-source code</a
           >
           by Karolina Strupiechowska
-        </div>
-      </small>
+        </small>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>

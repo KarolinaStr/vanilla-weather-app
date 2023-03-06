@@ -1,10 +1,10 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 h1 {
-  color: grey;
-  font-size: 24px;
+  color: #0060c6;
+  font-size: 35px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
@@ -17,7 +17,7 @@ ul {
 
 li {
   list-style: none;
-  color: grey;
+  color: #0060c6;
   display: block;
   font-family: arial, sans-serif;
   font-size: 16px;
@@ -41,7 +41,7 @@ li:first-letter {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
-  border: 1px solid #dadde1;
+  border: 1px solid #0060c6;
   border-radius: 5px;
 }
 
@@ -56,8 +56,12 @@ li:first-letter {
 }
 
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
+  color: #0060c6;
   font-size: 64px;
   line-height: 64px;
   font-weight: 400;
+}
+
+.weather-forecast {
+  margin-top: 20px;
 }
