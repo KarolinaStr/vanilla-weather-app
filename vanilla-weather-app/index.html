@@ -39,11 +39,17 @@
                   class="form-control"
                   id="city-input"
                   autocomplete="on"
-                  style="color: #0060c6"
+                  style="
+                    color: #0060c6;
+                    background-color: black;
+                    outline-style: solid;
+                    outline-color: white;
+                  "
                 />
               </div>
               <div class="col-3">
                 <input
+                  style="color: #000; background-color: #0060c6"
                   type="submit"
                   value="Search"
                   class="btn btn-primary w-100"
@@ -60,13 +66,17 @@
           </div>
           <div class="row">
             <div class="col-6">
-              <div class="clearfix weather-temperature"></div>
-              <img src="" alt="Clear" id="icon" class="float-left" />
-              <div class="float-left">
-                <strong id="temperature" style="font-size: 40px"></strong
-                ><span class="units" id="celcius-link"
-                  >°C | <a href="#" id="fahrenheit-link">°F</a></span
-                >
+              <div class="clearfix weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left" />
+                <div class="float-left">
+                  <strong
+                    id="temperature"
+                    style="font-size: 40px; color: #0060c6"
+                  ></strong
+                  ><span class="units" id="celcius-link"
+                    >°C | <a href="#" id="fahrenheit-link">°F</a></span
+                  >
+                </div>
               </div>
             </div>
             <div class="col-6">
@@ -75,31 +85,25 @@
                 <li>Wind: <span id="wind"></span> Km/H</li>
               </ul>
             </div>
-            <div class="weather-forecast-date">Thu</div>
+          </div>
+          <div class="weather-forecast" id="forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="weather-forecast-date">Thu</div>
                 <img
                   src="http://openweathermap.org/img/wn/50d@2x.png"
                   alt=""
                   width="42"
                 />
-                <div class="weather-forecast">
+                <div class="weather-forecast-temperatures">
                   <span class="weather-forecast-temperature-max"> 18° </span>
                   <span class="weather-forecast-temperature-min"> 12° </span>
                 </div>
-          </div>
-          <img
-            src="http://openweathermap.org/img/wn/50d@2x.png"
-            alt=""
-            width="65"
+              </div>
             </div>
           </div>
-          wed
-          </div>
         </div>
-        sun
-        <div class="weather-forecast"></div>
-        <div class="row"></div>
-        <div class="col-2"></div>
-        <small style="font-size: 16px">
+        <small style="font-size: 16px; color: white">
           <a
             href="https://github.com/KarolinaStr/vanilla-weather-app"
             target="_blank"
